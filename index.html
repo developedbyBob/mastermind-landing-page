@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasterMind - Domine a Programação Web</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- AOS - Animate On Scroll Library -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/extra-animations.css">
+</head>
+<body>
+    <!-- Efeitos de fundo -->
+    <div class="gradient-overlay"></div>
+    <div class="noise-texture"></div>
+    <div class="fluid-line fluid-line-1"></div>
+    <div class="fluid-line fluid-line-2"></div>
+    <div class="fluid-line fluid-line-3"></div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">MasterMind</div>
+                <div class="nav-cta">
+                    <a href="#cadastro" class="btn btn-outline">Login</a>
+                    <a href="#cta" class="btn btn-primary">Inscreva-se</a>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+            
+            <!-- Menu Mobile -->
+            <div class="mobile-menu">
+                <div class="mobile-menu-links">
+                    <a href="#sobre">Sobre</a>
+                    <a href="#beneficios">Benefícios</a>
+                    <a href="#para-quem">Para Quem</a>
+                    <a href="#cta">Inscreva-se</a>
+                </div>
+            </div>
+        </div>
+    </header>
+<!-- Hero Section Atualizada -->
+<section class="hero" id="hero">
+    <div class="container">
+        <div class="hero-background">
+            <div class="floating-tag tag-1">
+                <i class="fas fa-code"></i>
+                <span>42 Projetos Práticos</span>
+            </div>
+            <div class="floating-tag tag-2">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Certificado Profissional</span>
+            </div>
+            <div class="floating-tag tag-3">
+                <i class="fas fa-rocket"></i>
+                <span>Acesso Vitalício</span>
+            </div>
+        </div>
+        
+        <div class="hero-badge">
+            <span>Nova Turma: Vagas Limitadas</span>
+        </div>
+        
+        <div class="hero-title">
+            <h1>
+                <span class="title-line">Desenvolva Seu</span>
+                <span class="title-line highlight">Potencial</span>
+                <span class="title-line">Completo</span>
+            </h1>
+        </div>
+        
+        <div class="hero-description">
+            <p>O programa definitivo para desenvolvedores que querem dominar tecnologias avançadas, construir aplicações impressionantes e conquistar as melhores oportunidades do mercado.</p>
+        </div>
+        
+        <div class="hero-cta">
+            <a href="#cta" class="btn btn-primary btn-lg">QUERO GARANTIR MINHA VAGA</a>
+            <a href="#sobre" class="btn btn-link">Descubra como <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+        
+        <div class="hero-stats">
+            <div class="stat-item">
+                <div class="stat-number">2.500+</div>
+                <div class="stat-label">Alunos</div>
+            </div>
+            <div class="stat-separator"></div>
+            <div class="stat-item">
+                <div class="stat-number">96%</div>
+                <div class="stat-label">Satisfação</div>
+            </div>
+            <div class="stat-separator"></div>
+            <div class="stat-item">
+                <div class="stat-number">4.9/5</div>
+                <div class="stat-label">Avaliação</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Brands Section -->
+    <section class="brands-section">
+        <div class="container">
+            <p class="brands-title">Nossos alunos trabalham em empresas como:</p>
+            <div class="brands-container">
+                <div class="brand" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fab fa-google"></i> Google
+                </div>
+                <div class="brand" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fab fa-microsoft"></i> Microsoft
+                </div>
+                <div class="brand" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fab fa-amazon"></i> Amazon
+                </div>
+                <div class="brand" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fab fa-facebook"></i> Meta
+                </div>
+                <div class="brand" data-aos="fade-up" data-aos-delay="500">
+                    <i class="fab fa-spotify"></i> Spotify
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Section 1 -->
+    <section class="feature-section" id="sobre">
+        <div class="container">
+            <div class="feature-container">
+                <div class="feature-content" data-aos="fade-right" data-aos-duration="800">
+                    <span class="section-tag">O PROBLEMA</span>
+                    <h2>Por Que Muitos Desenvolvedores <span class="gradient-text">Não Alcançam o Sucesso?</span></h2>
+                    <p>O problema é que muitos desenvolvedores web focam apenas em aprender frameworks populares sem entender os fundamentos e princípios que sustentam a web moderna.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-times"></i> Pulam de tutorial em tutorial sem consolidar conhecimento</li>
+                        <li><i class="fas fa-times"></i> Criam projetos básicos que não impressionam recrutadores</li>
+                        <li><i class="fas fa-times"></i> Não conseguem explicar como suas aplicações funcionam de verdade</li>
+                        <li><i class="fas fa-times"></i> Ficam presos em salários medianos por anos</li>
+                    </ul>
+                    <p>Nosso programa aborda exatamente esses pontos cegos e fornece um caminho claro para você se tornar um desenvolvedor completo e disputado pelo mercado.</p>
+                    <a href="#cta" class="btn btn-primary">QUERO A ESTRATÉGIA COMPLETA</a>
+                </div>
+                <div class="feature-image" data-aos="fade-left" data-aos-duration="800">
+                    <img src="assets/img/feature-1.jpg" alt="Desenvolvedor frustrado">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Section 2 -->
+    <section class="feature-section" id="beneficios">
+        <div class="container">
+            <div class="feature-container reverse">
+                <div class="feature-content" data-aos="fade-left" data-aos-duration="800">
+                    <span class="section-tag">A VERDADE</span>
+                    <h2>Se Você Está Procurando por uma <span class="gradient-text">Fórmula Mágica</span>, Este Conteúdo NÃO é Para Você!</h2>
+                    <p>Não oferecemos soluções rápidas ou promessas vazias. O que fornecemos é uma metodologia comprovada construída a partir da experiência real de desenvolvedores que conseguiram se destacar em um mercado extremamente competitivo.</p>
+                    <ul class="feature-list checkmarks">
+                        <li><i class="fas fa-check"></i> Métodos testados e aprovados por desenvolvedores seniores</li>
+                        <li><i class="fas fa-check"></i> Conteúdo atualizado com as tendências atuais da indústria</li>
+                        <li><i class="fas fa-check"></i> Foco em projetos práticos que resolvem problemas reais</li>
+                        <li><i class="fas fa-check"></i> Mentoria de profissionais com experiência internacional</li>
+                    </ul>
+                    <p>Nossa abordagem exige comprometimento e prática constante, mas entrega resultados duradouros que transformam carreiras.</p>
+                    <a href="#cta" class="btn btn-primary">QUERO SABER MAIS</a>
+                </div>
+                <div class="feature-image" data-aos="fade-right" data-aos-duration="800">
+                    <img src="assets/img/feature-2.jpg" alt="Desenvolvedor de sucesso">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counter Section -->
+    <section class="counter-section">
+        <div class="container">
+            <div class="counters">
+                <div class="counter-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="counter-number" data-target="125">0</div>
+                    <div class="counter-label">Horas de conteúdo</div>
+                </div>
+                <div class="counter-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="counter-number" data-target="42">0</div>
+                    <div class="counter-label">Projetos práticos</div>
+                </div>
+                <div class="counter-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="counter-number" data-target="12">0</div>
+                    <div class="counter-label">Meses de acesso</div>
+                </div>
+                <div class="counter-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="counter-number" data-target="24">0</div>
+                    <div class="counter-label">Mentorias ao vivo</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience Section -->
+    <section class="target-section" id="para-quem">
+        <div class="container">
+            <span class="section-tag" data-aos="fade-up">PÚBLICO-ALVO</span>
+            <h2 data-aos="fade-up" data-aos-delay="100">Para <span class="gradient-text">Quem</span> é Este Programa?</h2>
+            <div class="audience-grid">
+                <div class="audience-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-code"></i>
+                    <h3>PARA INICIANTES QUE QUEREM EVITAR ARMADILHAS</h3>
+                    <p>Aprenda o caminho correto desde o início e evite anos de estudo sem direção que não levam a resultados reais.</p>
+                </div>
+                <div class="audience-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-rocket"></i>
+                    <h3>PARA DESENVOLVEDORES QUE QUEREM SE DESTACAR</h3>
+                    <p>Domine técnicas avançadas para construir aplicações complexas que impressionam recrutadores e clientes.</p>
+                </div>
+                <div class="audience-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>PARA QUEM QUER CONSTRUIR PROJETOS REAIS</h3>
+                    <p>Aprenda a arquitetar, desenvolver e implementar soluções web completas do início ao fim.</p>
+                </div>
+                <div class="audience-card" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>PARA QUEM BUSCA AS MELHORES OPORTUNIDADES</h3>
+                    <p>Posicione-se para conquistar vagas remotas internacionais e multiplicar seu potencial de ganhos.</p>
+                </div>
+            </div>
+            <div class="cta-center" data-aos="fade-up" data-aos-delay="500">
+                <a href="#cta" class="btn btn-primary btn-lg">QUERO GARANTIR MINHA VAGA AGORA</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <span class="section-tag" data-aos="fade-up">DEPOIMENTOS</span>
+            <h2 data-aos="fade-up" data-aos-delay="100">O Que Nossos <span class="gradient-text">Alunos</span> Dizem</h2>
+            
+            <div class="testimonials-slider" data-aos="fade-up" data-aos-delay="200">
+                <div class="testimonials-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Este programa mudou completamente minha carreira. Em 6 meses consegui uma vaga que pagava 3x mais do que eu ganhava antes."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">
+                                <img src="assets/img/avatars/avatar-1.jpg" alt="Avatar">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>João Silva</h4>
+                                <p>Desenvolvedor Front-end</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Finalmente entendi conceitos avançados que sempre me confundiam. A metodologia é simplesmente incrível!"</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">
+                                <img src="assets/img/avatars/avatar-2.jpg" alt="Avatar">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Maria Oliveira</h4>
+                                <p>Desenvolvedora Full-stack</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"As mentorias ao vivo fizeram toda a diferença. Consegui resolver problemas reais com a ajuda de profissionais experientes."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">
+                                <img src="assets/img/avatars/avatar-3.jpg" alt="Avatar">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Carlos Santos</h4>
+                                <p>Desenvolvedor Back-end</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Eu já tinha tentado vários cursos antes, mas este foi o único que realmente me fez evoluir como desenvolvedor."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">
+                                <img src="assets/img/avatars/avatar-4.jpg" alt="Avatar">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Ana Pereira</h4>
+                                <p>UI/UX Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonials-nav">
+                    <button class="prev-testimonial"><i class="fas fa-arrow-left"></i></button>
+                    <button class="next-testimonial"><i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="cta" style="position: relative; z-index: 5; display: block !important; visibility: visible !important; opacity: 1 !important;">
+        <div class="container">
+            <span class="section-tag" data-aos="fade-up">INVESTIMENTO</span>
+            <h2 data-aos="fade-up" data-aos-delay="100">Pronto para <span class="gradient-text">Dar o Próximo Passo</span> na Sua Carreira?</h2>
+            <p class="section-desc" data-aos="fade-up" data-aos-delay="200">Junte-se a centenas de desenvolvedores que já transformaram suas carreiras com nossa metodologia comprovada.</p>
+            
+            <div class="pricing-container" data-aos="fade-up" data-aos-delay="300">
+                <div class="pricing-card">
+                    <div class="pricing-badge">MAIS POPULAR</div>
+                    <div class="pricing-header">
+                        <h3>MasterMind Pro</h3>
+                        <div class="pricing-amount">
+                            <div class="pricing-old">R$ 2.997</div>
+                            <div class="pricing-current">R$ 1.497</div>
+                            <div class="pricing-period">pagamento único</div>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Acesso vitalício ao conteúdo</li>
+                            <li><i class="fas fa-check"></i> 125+ horas de aulas práticas</li>
+                            <li><i class="fas fa-check"></i> 42 projetos para portfolio</li>
+                            <li><i class="fas fa-check"></i> Mentorias em grupo (12 meses)</li>
+                            <li><i class="fas fa-check"></i> Comunidade exclusiva</li>
+                            <li><i class="fas fa-check"></i> Certificado profissional</li>
+                            <li><i class="fas fa-check"></i> Revisão de código</li>
+                            <li><i class="fas fa-check"></i> Suporte técnico prioritário</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-action">
+                        <a href="#cadastro" class="btn btn-primary btn-block">GARANTIR MINHA VAGA</a>
+                        <div class="pricing-guarantee">
+                            <i class="fas fa-shield-alt"></i> Garantia incondicional de 30 dias
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="payment-methods" data-aos="fade-up" data-aos-delay="400">
+                <p>Formas de pagamento</p>
+                <div class="payment-icons">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-pix"></i>
+                    <i class="fas fa-barcode"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <span class="section-tag" data-aos="fade-up">FAQ</span>
+            <h2 data-aos="fade-up" data-aos-delay="100">Perguntas <span class="gradient-text">Frequentes</span></h2>
+            
+            <div class="faq-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Preciso de conhecimento prévio para participar?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Não necessariamente. O programa foi estruturado para atender desde iniciantes até desenvolvedores intermediários. Começamos com os fundamentos e avançamos progressivamente para tópicos mais complexos. No entanto, um conhecimento básico de lógica de programação ajudará você a aproveitar melhor o conteúdo.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Por quanto tempo terei acesso ao conteúdo?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Você terá acesso vitalício ao conteúdo do curso. As mentorias em grupo têm duração de 12 meses, mas o material didático, projetos e comunidade permanecem disponíveis indefinidamente.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Quais tecnologias serão abordadas no programa?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O programa cobre o stack completo de desenvolvimento web: HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, SQL, Git, Docker, entre outras. Além disso, abordamos práticas modernas como CI/CD, testes automatizados, arquitetura de software e design patterns.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Como funcionam as mentorias?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>As mentorias acontecem duas vezes por mês em formato de webinar, onde os instrutores abordam tópicos específicos, respondem dúvidas e revisam projetos dos alunos. Todas as sessões são gravadas e disponibilizadas para acesso posterior.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Posso pagar em parcelas?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, oferecemos parcelamento em até 12x no cartão de crédito. Também aceitamos Pix e boleto bancário para pagamento à vista com 10% de desconto adicional.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="registration-section" id="cadastro">
+        <div class="container">
+            <div class="registration-container">
+                <div class="registration-content" data-aos="fade-right" data-aos-duration="800">
+                    <span class="section-tag">ÚLTIMO PASSO</span>
+                    <h2>Faça Sua <span class="gradient-text">Inscrição</span> Agora</h2>
+                    <p>Preencha o formulário ao lado para garantir sua vaga na próxima turma do MasterMind. As vagas são limitadas e costumam esgotar rapidamente.</p>
+                    
+                    <div class="registration-features">
+                        <div class="feature-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Certificado Profissional</h4>
+                                <p>Reconhecido pelo mercado</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>Comunidade Exclusiva</h4>
+                                <p>Networking com profissionais</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>Garantia de 30 Dias</h4>
+                                <p>Satisfação ou dinheiro de volta</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="registration-form" data-aos="fade-left" data-aos-duration="800">
+                    <form id="signup-form">
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="Seu melhor e-mail" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="level">Nível de Experiência</label>
+                            <select id="level" name="level" required>
+                                <option value="" disabled selected>Selecione seu nível</option>
+                                <option value="beginner">Iniciante</option>
+                                <option value="intermediate">Intermediário</option>
+                                <option value="advanced">Avançado</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">Li e concordo com os <a href="#">Termos e Condições</a></label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">GARANTIR MINHA VAGA</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo-container">
+                    <div class="logo">MasterMind</div>
+                    <p>Transformando desenvolvedores em profissionais de elite através de uma metodologia comprovada e orientada a resultados.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Links Rápidos</h3>
+                        <ul>
+                            <li><a href="#hero">Início</a></li>
+                            <li><a href="#sobre">Sobre</a></li>
+                            <li><a href="#beneficios">Benefícios</a></li>
+                            <li><a href="#para-quem">Para Quem</a></li>
+                            <li><a href="#cta">Preços</a></li>
+                            <li><a href="#cadastro">Inscreva-se</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links-column">
+                        <h3>Recursos</h3>
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Tutoriais</a></li>
+                            <li><a href="#">Webinars Gratuitos</a></li>
+                            <li><a href="#">E-books</a></li>
+                            <li><a href="#">Podcast</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links-column">
+                        <h3>Suporte</h3>
+                        <ul>
+                            <li><a href="#">Central de Ajuda</a></li>
+                            <li><a href="#">Perguntas Frequentes</a></li>
+                            <li><a href="#">Política de Privacidade</a></li>
+                            <li><a href="#">Termos de Uso</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3>Receba Novidades</h3>
+                    <p>Inscreva-se para receber conteúdos exclusivos e novidades sobre o programa.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu e-mail" required>
+                        <button type="submit" class="btn btn-primary">Inscrever</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2025 MasterMind. Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Termos</a>
+                    <a href="#">Privacidade</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-decoration">
+            <div class="footer-line"></div>
+            <div class="footer-shape"></div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Js Components -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/enhanced-features.js"></script>
+</body>
+</html>
