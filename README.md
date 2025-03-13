@@ -2,7 +2,7 @@
 
 Uma landing page moderna e responsiva para um programa de desenvolvimento web, construída com HTML, CSS e JavaScript puros.
 
-![MasterMind Landing Page Preview](/assets/img/screenshot.png)
+[Acesse a landing page do MasterMind](https://mastermind-lp.vercel.app/)
 
 ## 📋 Visão Geral
 
