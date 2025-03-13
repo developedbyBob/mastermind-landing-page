@@ -333,7 +333,6 @@ function enhanceForm() {
             
             .form-label-animated {
                 position: absolute;
-                top: 50%;
                 left: 16px;
                 transform: translateY(-50%);
                 transition: all 0.3s ease;

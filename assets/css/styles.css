@@ -115,17 +115,7 @@ ul {
 }
 
 .section-tag {
-    display: inline-block;
-    background: linear-gradient(to right, rgba(124, 58, 237, 0.1), rgba(16, 185, 129, 0.1));
-    color: var(--primary-light);
-    padding: var(--spacing-sm) var(--spacing-md);
-    border-radius: var(--radius-full);
-    font-size: var(--text-xs);
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-bottom: var(--spacing-md);
-    border: 1px solid rgba(124, 58, 237, 0.2);
+    display: none !important;
 }
 
 .gradient-text {
@@ -728,7 +718,6 @@ nav {
     height: 100%;
     top: 15px;
     left: 15px;
-    border: 1px solid var(--primary);
     border-radius: var(--radius-lg);
     z-index: -1;
     opacity: 0.3;
@@ -1030,6 +1019,11 @@ nav {
 .pricing-container {
     max-width: 800px;
     margin: 0 auto;
+}
+
+.pricing-section h2 {
+    text-align: center;
+    margin-bottom: 48px;
 }
 
 .pricing-card {
@@ -1559,189 +1553,236 @@ footer {
     box-shadow: var(--shadow-xl);
 }
 
-
-/* Estilos específicos para garantir a visibilidade da seção de preços */
-#cta.pricing-section {
+/* ===== Garantir visibilidade da seção de preços ===== */
+#cta.pricing-section,
+.pricing-section#cta {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
     position: relative !important;
-    z-index: 10 !important; /* Aumento do z-index para garantir que está acima de outros elementos */
-    background-color: var(--dark) !important; /* Garante que o fundo seja visível */
-    padding: var(--spacing-3xl) 0 !important; /* Mantém o espaçamento apropriado */
+    z-index: 5 !important;
+    background-color: var(--dark) !important;
+    padding: var(--spacing-3xl) 0 !important;
     overflow: visible !important;
-  }
-  
-  /* Garante que o container dentro da seção também seja visível */
-  #cta .container {
+}
+
+#cta .container,
+#cta .pricing-card,
+#cta .section-desc,
+#cta .pricing-container,
+#cta .payment-methods {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
-  }
-  
-  /* Garante que os elementos filhos também sejam visíveis */
-  #cta .pricing-card,
-  #cta .section-tag,
-  #cta h2,
-  #cta .section-desc,
-  #cta .pricing-container,
-  #cta .payment-methods {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-  
-  /* Remove todas as animações que possam estar interferindo */
-  #cta * {
-    animation: none !important;
-    transition: none !important;
-  }
-  
-  /* Garante que o card de preço seja bem visível */
-  #cta .pricing-card {
-    background: rgba(31, 31, 31, 0.9) !important;
-    border: 2px solid var(--primary) !important;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
-  }
+}
 
 
 /* ===== Responsividade ===== */
 @media (max-width: 1024px) {
+    /* Ajuste de fontes para tablets */
     :root {
+        --text-6xl: 3rem;
         --text-5xl: 2.5rem;
         --text-4xl: 2rem;
         --text-3xl: 1.75rem;
+        --text-2xl: 1.5rem;
+        --text-xl: 1.15rem;
+        --text-lg: 1rem;
+    }
+    
+    /* Ajustes de espaçamento para tablets */
+    :root {
+        --spacing-3xl: 50px;
+        --spacing-2xl: 36px;
+        --spacing-xl: 24px;
+        --spacing-lg: 16px;
     }
 
-    .hero-container,
-    .feature-container,
-    .registration-container {
+    /* Ajustes de layout */
+    .hero-title h1 {
+        font-size: 3.5rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .feature-container {
         gap: var(--spacing-xl);
+    }
+    
+    .audience-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 768px) {
+    /* Ajuste de fontes para mobile */
     :root {
+        --text-6xl: 2.5rem;
         --text-5xl: 2rem;
         --text-4xl: 1.75rem;
         --text-3xl: 1.5rem;
         --text-2xl: 1.25rem;
+        --text-xl: 1.1rem;
+        --text-lg: 1rem;
+        --text-base: 0.95rem;
     }
     
-    .nav-cta {
-        display: none;
+    /* Ajustes de espaçamento para mobile */
+    :root {
+        --spacing-3xl: 40px;
+        --spacing-2xl: 30px;
+        --spacing-xl: 20px;
+        --spacing-lg: 15px;
+        --spacing-md: 10px;
+    }
+
+    /* Hero section */
+    .hero {
+        padding: 100px 0 50px;
     }
     
-    .mobile-menu-toggle {
-        display: flex;
+    .hero-title h1 {
+        font-size: 2.8rem;
+        line-height: 1.2;
     }
     
-    .mobile-menu {
-        display: block;
+    .hero-description p {
+        font-size: 1rem;
     }
     
-    .hero-container,
+    .floating-tag {
+        display: none; /* Esconde tags flutuantes em mobile para simplificar */
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+    
+    .stat-separator {
+        width: 80%;
+        height: 1px;
+        margin: 0 auto;
+    }
+    
+    /* Ajustes de layout */
     .feature-container,
-    .registration-container {
+    .feature-container.reverse {
         flex-direction: column;
     }
     
-    .hero-content,
-    .hero-image,
     .feature-content,
-    .feature-image,
-    .registration-content,
-    .registration-form {
+    .feature-image {
         width: 100%;
     }
     
-    .hero {
-        padding: 120px 0 60px;
-    }
-    
-    .hero-cta {
-        flex-direction: column;
+    .feature-image {
+        margin-top: var(--spacing-xl);
     }
     
     .testimonial-card {
         flex: 0 0 100%;
     }
     
-    .footer-top {
+    .registration-container {
         flex-direction: column;
-    }
-    
-    .footer-links {
-        flex-wrap: wrap;
         gap: var(--spacing-xl);
     }
     
-    .footer-links-column {
-        min-width: 120px;
+    .registration-content {
+        width: 100%;
     }
     
-    .footer-newsletter {
-        max-width: 100%;
+    /* Formulário */
+    .registration-form {
+        width: 100%;
+        padding: var(--spacing-lg);
+    }
+    
+    .form-group input,
+    .form-group select {
+        padding: 10px;
+    }
+    
+    /* Footer */
+    .footer-top {
+        flex-direction: column;
+        gap: var(--spacing-xl);
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: var(--spacing-lg);
     }
     
     .footer-bottom {
         flex-direction: column;
+        text-align: center;
         gap: var(--spacing-md);
+    }
+    
+    .footer-legal {
+        justify-content: center;
     }
 }
 
 @media (max-width: 480px) {
-    :root {
-        --spacing-3xl: 48px;
-        --spacing-2xl: 32px;
+    /* Ajustes específicos para telas muito pequenas */
+    .hero-title h1 {
+        font-size: 2.2rem;
     }
     
-    .hero h1 {
-        font-size: var(--text-3xl);
-    }
-    
-    .hero p {
-        font-size: var(--text-base);
-    }
-    
-    .hero-stats {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .floating-card {
-        display: none;
-    }
-    
-    .brands-container {
-        gap: var(--spacing-md);
-    }
-    
-    .brand {
-        font-size: var(--text-base);
-    }
-    
-    .feature-section h2,
-    .target-section h2,
-    .testimonials-section h2,
-    .pricing-section h2,
-    .faq-section h2,
-    .registration-content h2 {
-        font-size: var(--text-2xl);
+    .btn-lg {
+        padding: 12px 24px;
+        font-size: 1rem;
     }
     
     .audience-grid {
         grid-template-columns: 1fr;
     }
     
-    .newsletter-form {
-        flex-direction: column;
-    }
-    
-    .back-to-top {
-        bottom: 20px;
-        right: 20px;
+    .testimonials-nav button {
         width: 40px;
         height: 40px;
+    }
+    
+    .counter-item {
+        min-width: 100%; /* Para garantir que cubra toda a largura */
+    }
+    
+    h2 {
+        font-size: var(--text-2xl) !important;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Simplificar ou desativar algumas animações em mobile */
+    .fade-in,
+    .scale-in,
+    .slide-in-left,
+    .slide-in-right {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+    
+    [data-aos] {
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none !important;
+        transition: none !important;
+    }
+    
+    /* Desativa efeitos hover complexos */
+    .hover-card:hover {
+        transform: none;
+        box-shadow: var(--shadow-md);
+    }
+    
+    /* Simplifica animações de partículas */
+    .particle {
+        display: none;
     }
 }
