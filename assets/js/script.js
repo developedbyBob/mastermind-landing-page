@@ -551,6 +551,38 @@ function addLightEffects() {
     document.head.appendChild(style);
 }
 
+// Script para garantir a visibilidade da seção de preços
+document.addEventListener('DOMContentLoaded', function() {
+    // Seleciona a seção de preços
+    const pricingSection = document.getElementById('cta');
+    
+    if (pricingSection) {
+      // Força a visibilidade
+      pricingSection.style.display = 'block';
+      pricingSection.style.visibility = 'visible';
+      pricingSection.style.opacity = '1';
+      pricingSection.style.position = 'relative';
+      pricingSection.style.zIndex = '5';
+      
+      // Remove qualquer classe que possa estar escondendo a seção
+      pricingSection.classList.remove('fade-in', 'scale-in', 'slide-in-left', 'slide-in-right');
+      
+      // Adiciona a classe 'visible' caso seja necessário para as animações
+      pricingSection.classList.add('visible');
+      
+      // Log para debug
+      console.log('CTA Pricing section fixed:', pricingSection);
+      
+      // Verifica se há algum estilo computado que poderia estar escondendo a seção
+      const computedStyle = window.getComputedStyle(pricingSection);
+      console.log('CTA computed display:', computedStyle.display);
+      console.log('CTA computed visibility:', computedStyle.visibility);
+      console.log('CTA computed opacity:', computedStyle.opacity);
+    } else {
+      console.error('CTA Pricing section not found');
+    }
+  });
+
 // ===== Iniciar efeitos extras =====
 window.addEventListener('load', function() {
     // Adiciona efeito de digitação se houver elementos com a classe typing-effect

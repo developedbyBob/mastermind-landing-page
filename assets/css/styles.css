@@ -1559,6 +1559,52 @@ footer {
     box-shadow: var(--shadow-xl);
 }
 
+
+/* Estilos específicos para garantir a visibilidade da seção de preços */
+#cta.pricing-section {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+    z-index: 10 !important; /* Aumento do z-index para garantir que está acima de outros elementos */
+    background-color: var(--dark) !important; /* Garante que o fundo seja visível */
+    padding: var(--spacing-3xl) 0 !important; /* Mantém o espaçamento apropriado */
+    overflow: visible !important;
+  }
+  
+  /* Garante que o container dentro da seção também seja visível */
+  #cta .container {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  
+  /* Garante que os elementos filhos também sejam visíveis */
+  #cta .pricing-card,
+  #cta .section-tag,
+  #cta h2,
+  #cta .section-desc,
+  #cta .pricing-container,
+  #cta .payment-methods {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  
+  /* Remove todas as animações que possam estar interferindo */
+  #cta * {
+    animation: none !important;
+    transition: none !important;
+  }
+  
+  /* Garante que o card de preço seja bem visível */
+  #cta .pricing-card {
+    background: rgba(31, 31, 31, 0.9) !important;
+    border: 2px solid var(--primary) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+  }
+
+
 /* ===== Responsividade ===== */
 @media (max-width: 1024px) {
     :root {
